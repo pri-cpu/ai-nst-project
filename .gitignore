@@ -2,4 +2,9 @@
 __pycache__/
 **/__pycache__/
 *.pyc
-experiment/
+big_dataset/
+experiment1/
+experiment2/
+experiment4/
+trial/
+trial2/
