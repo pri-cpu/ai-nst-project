@@ -144,6 +144,5 @@ def send_example(filename):
 
 
 if __name__ == '__main__':
-    # This block only runs when you execute `python app.py` on your laptop
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    from werkzeug.serving import run_simple
+    run_simple('localhost', 5000, app, use_reloader=True, use_debugger=True) 
